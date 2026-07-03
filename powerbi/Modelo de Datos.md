@@ -61,70 +61,32 @@ El modelo consta de:
 
 ## 📐 Diccionario de Métricas (DAX)
 
-### 🟢 Leads Totales
-\`\`\`DAX
+🟢 Leads Totales: Calcula usuarios únicos en el embudo.
 Leads Totales = DISTINCTCOUNT(funnel_events[user_id])
-\`\`\`
-Calcula usuarios únicos en el embudo.
 
----
+🔵 Cierres: Cuenta conversiones finales.
+Cierres = CALCULATE(DISTINCTCOUNT(funnel_events[user_id]), funnel_events[stage] = "closed_won")
 
-### 🔵 Cierres
-\`\`\`DAX
-Cierres =
-CALCULATE(
-    DISTINCTCOUNT(funnel_events[user_id]),
-    funnel_events[stage] = "closed_won"
-)
-\`\`\`
-Cuenta conversiones finales.
-
----
-
-### 🟣 Tasa de Conversión
-\`\`\`DAX
+🟣 Tasa de Conversión: Mide eficiencia comercial.
 Conversion % = DIVIDE([Cierres], [Leads Totales], 0)
-\`\`\`
-Mide eficiencia comercial.
 
----
-
-### 🔴 Drop-off %
-\`\`\`DAX
+🔴 Drop-off %: Mide abandono del funnel.
 Drop-off % = 1 - [Conversion %]
-\`\`\`
-Mide abandono del funnel.
 
----
-
-### 🟡 Leads Este Mes
-\`\`\`DAX
-Leads Este Mes =
-CALCULATE(
-    DISTINCTCOUNT(funnel_events[user_id]),
-    DATESMTD(Calendario[Date])
-)
-\`\`\`
-Acumulado mensual (MTD).
+🟡 Leads Este Mes: Acumulado mensual (MTD).
+Leads Este Mes = CALCULATE(DISTINCTCOUNT(funnel_events[user_id]),DATESMTD(Calendario[Date]))
 
 ---
 
 ## 📊 Guía de Visualizaciones
 
-### 🧱 Fila 1: KPIs
+🧱 Fila 1: KPIs
 - Leads Totales
 - Cierres
 - Tasa de Conversión
 - Drop-off %
 
-Formato:
-- Tarjetas
-- Tamaño: 28-32
-- Ubicación: Cabecera
-
----
-
-### 🔻 Fila 2: Funnel y Conversión
+🔻 Fila 2: Funnel y Conversión
 
 **Funnel Chart**
 - Grupo: stage
@@ -137,9 +99,7 @@ Formato:
 - Valores: Conversion %
 - Título: Conversión por Dispositivo
 
----
-
-### 📈 Fila 3: Tendencia y Segmentación
+📈 Fila 3: Tendencia y Segmentación
 
 **Gráfico de Líneas**
 - Eje X: year_month
