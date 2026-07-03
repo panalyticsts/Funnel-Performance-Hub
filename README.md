@@ -44,28 +44,28 @@ Analizar el embudo de conversión para identificar puntos críticos de abandono,
 
 Estructura del repositorio y organización de los archivos del proyecto:
 
-```bash
+```text
 Funnel-Performance-Hub/
-├── README.md
+├── assets/
+│   └── PowerBIFunnel.PNG
+├── data/
+│   └── sample_data.csv
 ├── docs/
 │   ├── 01_problema_y_objetivos.md
 │   ├── 02_diccionario_de_datos.md
 │   ├── 03_metodologia.md
-│   └── 04_hallazgos_y_recomendaciones.md
-├── sql/
-│   └── queries_analisis_embudo.sql
-├── python/
-│   └── analisis_conversion.ipynb
+│   └── 04_hallazgos_y_recomenda.md
+├── excel/
+│   ├── funnel_events.csv
+│   └── user_table.csv
 ├── powerbi/
 │   └── dashboard_embudo.pbix
-├── excel/
-│   └── modelo_analisis.xlsx
-├── data/
-│   └── (datos de muestra o anonimizados)
-├── assets/
-│   └── (capturas del dashboard)
+├── python/
+│   └── Dashboard_Funnel.ipynb
+├── sql/
+│   └── dump_schema.sql.sql
+└── README.md
 ```
-
 ---
 
 ## 📊 Insights clave
