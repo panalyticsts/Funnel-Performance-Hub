@@ -41,3 +41,60 @@ Analizar el embudo de conversión para identificar puntos críticos de abandono,
 ---
 
 ## 📁 Estructura del repositorio
+
+Estructura del repositorio y organización de los archivos del proyecto:
+
+```bash
+Funnel-Performance-Hub/
+├── README.md
+├── docs/
+│   ├── 01_problema_y_objetivos.md
+│   ├── 02_diccionario_de_datos.md
+│   ├── 03_metodologia.md
+│   └── 04_hallazgos_y_recomendaciones.md
+├── sql/
+│   └── queries_analisis_embudo.sql
+├── python/
+│   └── analisis_conversion.ipynb
+├── powerbi/
+│   └── dashboard_embudo.pbix
+├── excel/
+│   └── modelo_analisis.xlsx
+├── data/
+│   └── (datos de muestra o anonimizados)
+├── assets/
+│   └── (capturas del dashboard)
+```
+
+---
+
+## 📊 Insights clave
+
+A partir del análisis del embudo de conversión, se identificaron los siguientes hallazgos:
+
+- Existe una caída significativa en la etapa de registro a activación, indicando posibles fricciones en el onboarding.
+- La tasa de conversión disminuye progresivamente en cada etapa, pero el mayor impacto se concentra en las primeras fases del funnel.
+- Algunos segmentos de usuarios presentan mejor rendimiento, lo que sugiere oportunidades de segmentación y personalización.
+- El volumen de usuarios en etapas iniciales es alto, pero no se traduce proporcionalmente en conversiones finales.
+
+---
+
+## 💡 Recomendaciones de negocio
+
+Con base en los hallazgos, se proponen las siguientes acciones:
+
+- Optimizar el proceso de onboarding para reducir fricción en la activación de usuarios.
+- Implementar pruebas A/B en las primeras etapas del funnel para mejorar la conversión inicial.
+- Analizar el comportamiento de los segmentos con mayor conversión para replicar estrategias exitosas.
+- Simplificar el flujo de registro y reducir la cantidad de pasos necesarios para completar el proceso.
+- Incorporar métricas de seguimiento continuo para monitorear mejoras en la tasa de conversión.
+
+---
+## 📈 Impacto esperado
+
+La implementación de estas recomendaciones podría:
+
+- Incrementar la tasa de conversión en etapas críticas del funnel.
+- Mejorar la retención temprana de usuarios.
+- Aumentar el valor del ciclo de vida del cliente (LTV).
+- Generar una toma de decisiones más basada en datos.
