@@ -12,6 +12,7 @@ Se construyó una base de datos en SQLite a partir de un archivo CSV con más de
 
 ## 🔹 2. TRANSFORMACIÓN Y ENRIQUECIMIENTO (PYTHON - COLAB)
 Los datos fueron procesados en Python usando Pandas para asegurar calidad y estructura analítica.
+
 Se realizaron:
 - Conversión de fechas
 - Creación de variables temporales (año, mes, year_month)
@@ -50,6 +51,7 @@ Se construyó un dashboard interactivo con:
 - Conversión por canal
 - Tendencia temporal
 - Segmentación por usuario
+  
 Además, se incluyeron filtros dinámicos por:
 - Fecha
 - Canal
