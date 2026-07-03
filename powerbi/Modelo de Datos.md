@@ -62,18 +62,23 @@ El modelo consta de:
 ## 📐 Diccionario de Métricas (DAX)
 
 🟢 Leads Totales: Calcula usuarios únicos en el embudo.
+
 Leads Totales = DISTINCTCOUNT(funnel_events[user_id])
 
 🔵 Cierres: Cuenta conversiones finales.
+
 Cierres = CALCULATE(DISTINCTCOUNT(funnel_events[user_id]), funnel_events[stage] = "closed_won")
 
 🟣 Tasa de Conversión: Mide eficiencia comercial.
+
 Conversion % = DIVIDE([Cierres], [Leads Totales], 0)
 
 🔴 Drop-off %: Mide abandono del funnel.
+
 Drop-off % = 1 - [Conversion %]
 
 🟡 Leads Este Mes: Acumulado mensual (MTD).
+
 Leads Este Mes = CALCULATE(DISTINCTCOUNT(funnel_events[user_id]),DATESMTD(Calendario[Date]))
 
 ---
