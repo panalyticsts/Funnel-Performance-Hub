@@ -3,7 +3,7 @@
 Para garantizar una arquitectura escalable, un rendimiento óptimo de las medidas DAX y un filtrado interactivo eficiente, se implementó un modelo de datos basado en un **Esquema en Estrella (Star Schema)**.
 
 ## 🧩 Diseño del Modelo de Datos
-![Dashboard](./Estrella.PNG)
+![Modelo de Datos](../assets/Estrella.png)
 
 ---
 
