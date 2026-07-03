@@ -17,9 +17,7 @@
 ## 📌 Patrones clave
 - Contratos largos reducen el churn.
 - Pagos automáticos disminuyen la cancelación.
-EOF
 
---
 
 # Recomendaciones Estratégicas
 
