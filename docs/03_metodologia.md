@@ -1,18 +1,15 @@
-# =========================================
-# METODOLOGÍA DEL PROYECTO - FUNNEL ANALYTICS
-# =========================================
+🧠 **METODOLOGÍA DEL PROYECTO - FUNNEL ANALYTICS**
 
-# 1. EXTRACCIÓN Y GENERACIÓN DE DATOS (SQL)
-# -----------------------------------------
-# - Carga de datos en SQLite desde CSV
-# - Creación de tabla base: user_table
-# - Generación de tabla analítica: funnel_events
-# - Simulación de etapas del funnel:
-#   lead → qualified → proposal → closed_won
-# - Creación de variables:
-#   - month
-#   - segment
-#   - source
+## 🔹 1. EXTRACCIÓN Y GENERACIÓN DE DATOS (SQL)
+      - Se construyó una base de datos en SQLite a partir de un archivo CSV con más de 90.000 registros de usuarios
+      - Se creó la tabla base user_table
+      - Se generó una tabla analítica funnel_events
+      - Se simuló el comportamiento del embudo mediante lógica condicional (CASE WHEN)
+
+📌 Esto permitió:
+
+Definir etapas del funnel: lead, qualified, proposal, closed_won
+Crear variables clave como mes, segmento y canal
 
 
 # 2. TRANSFORMACIÓN Y ENRIQUECIMIENTO (PYTHON - COLAB)
