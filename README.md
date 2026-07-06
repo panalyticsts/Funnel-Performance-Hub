@@ -28,7 +28,7 @@ Analizar el embudo de conversión para identificar puntos críticos de abandono,
 ---
 
 ## 📸 Dashboard
-![Dashboard](./PowerBIFunnel.PNG)
+![Dashboard](./assets/PowerBIFunnel.PNG)
 
 ---
 
