@@ -48,8 +48,6 @@ Estructura del repositorio y organización de los archivos del proyecto:
 Funnel-Performance-Hub/
 ├── assets/
 │   └── PowerBIFunnel.PNG
-├── data/
-│   └── sample_data.csv
 ├── docs/
 │   ├── 01_problema_y_objetivos.md
 │   ├── 02_diccionario_de_datos.md
